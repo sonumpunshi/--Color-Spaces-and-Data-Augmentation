@@ -1,14 +1,15 @@
-# -Key-Point-Detection-Key-Point-Matching-and-Image-Stitching
+# -Color Spaces and Data Augmentation
 
 
-Implemented key point detection using SIFT (Scale-Invariant Feature Transform) from scikit-image, a popular computer vision library.
+Color Spaces and Data AugmentationColor Spaces and Data Augmentation
+Developed functions in Python to convert images between the RGB and HSV color spaces using NumPy arrays.
 
-Developed a key point matching function that takes two sets of key point features and returns a list of indices of matching pairs, establishing correspondences between two images.
+Created an image transformation function to generate random square crops of a given size from an input image, ensuring the crop size is feasible based on the input image dimensions.
 
-Created a visualization function that combines two images side-by-side and plots the detected key points and their matched connections, providing a visual representation of key point correspondences.
+Implemented a patch extraction function to return non-overlapping patches from an input image, useful for preprocessing in machine learning applications.
 
-Implemented an image stitching solution that computes a transformation matrix used to warp one image for stitching with another image, utilizing key points matched between the two images.
+Developed a resizing function to resize images using nearest neighbor interpolation, taking an input image and a scale factor as inputs.
 
-Developed functions to compute affine and projective transformation matrices based on matched key point coordinates, using the normal equations approach. The functions return 2x3 and 3x3 matrices, respectively.
+Implemented a color jitter function to randomly perturb the HSV values of an input image by a user-defined amount, leveraging the color space conversion functions developed earlier.
 
-Implemented the RANSAC (Random Sample Consensus) algorithm for robust estimation of the transformation matrix by identifying and rejecting outlier matches, improving the accuracy and reliability of the image stitching process.
+Created an image pyramid function to generate resized copies of an input image in powers of 2, based on a user-defined pyramid height. The function saves the resized copies with appropriate filenames indicating the scale factor.
