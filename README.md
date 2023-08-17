@@ -1,4 +1,4 @@
-# -Color Spaces and Data Augmentation
+# Color Spaces and Data Augmentation
 
 
 Color Spaces and Data AugmentationColor Spaces and Data Augmentation
